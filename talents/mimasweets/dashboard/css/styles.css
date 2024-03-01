@@ -104,7 +104,6 @@ a {
 .large-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-
 }
 
 .title-container {
@@ -134,7 +133,6 @@ a {
   box-shadow: -1px -1px 0px var(--border-color),
     1px 1px 0px var(--border-color);
 }
-
 
 .title {
   position: relative;
@@ -238,13 +236,10 @@ footer {
 
 /* soundboard exclusives */
 
-
 .top10-container {
   text-align: center;
   position: relative;
 }
-
-
 
 .sound-container {
   margin: 0 0 7px 0;
@@ -286,7 +281,6 @@ footer {
   background-color: var(--foreground-color);
   box-shadow: 0 5px var(--border-color-emphasis);
 }
-
 
 .clipboard:hover {
   border: 1px solid var(--border-color-emphasis);
