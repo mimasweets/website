@@ -356,7 +356,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     column-gap: 6px;
-    background-color: red;
   }
 
   .container {
