@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mima's text commands</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../dashboard/css/styles.css"/>
+    <script type="text/javascript">
+        function play_sound(clicked_id) {
+            var audio = new Audio("./audio/" + clicked_id + ".ogg");
+            audio.play();
+        }
+    </script>
+</head>
+
+<body>
+    <h1><a class="folder"  href="../dashboard/">Mima's Dashboard</a> > Text Commands</h1>
+    <p class="hint">Click the command name to copy to clipboard</p>
+
+    <div class="large-container">
+        <div class="title-container">
+            <button class="title">
+                <h2>🔖 Stream</h2>
+                <!-- <img class="new" src="./imgs/new.png" /> -->
+            </button>
+            <div class="container">
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!quote add *')} test(); return false;">!quote
+                    add *
+                    <div class="hint">
+                        </br>Preserve one of Mima's ramblings.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!quote random')} test(); return false;">!quote
+                    random
+                    <div class="hint">
+                        </br>Post a random quote to chat.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!quote #')} test(); return false;">!quote #
+                    <div class="hint">
+                        </br>Post the requested quote to chat.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!leaderboard')} test(); return false;">!leaderboard
+                    <div class="hint">
+                        </br>Check your current position on the check-in leaderboards.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!leaderboard @Example')} test(); return false;">!leaderboard
+                    @*
+                    <div class="hint">
+                        </br>Checks another user's position on the check-in leaderboards</a>
+                </button>
+            </div>
+        </div>
+        <div class="title-container">
+            <button class="title">
+                <h2>🎲 Fun</h2>
+            </button>
+            <div class="container">
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!dadjoke')} test(); return false;">!dadjoke
+                    <div class="hint">
+                        </br>Posts a dad joke!</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('f')} test(); return false;">f
+                    <div class="hint">
+                        </br>Pay respects.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!coinflip')} test(); return false;">!coinflip
+                    <div class="hint">
+                        </br>Flip a coin. Posts heads or tails as a result.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!rolld20')} test(); return false;">!rolld20
+                    <div class="hint">
+                        </br>Roll a 20-sided die.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!lurk')} test(); return false;">!lurk
+                    <div class="hint">
+                        </br>Let's us know you are unable to answer so we don't look like fools talking to you.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!boot @example')} test(); return false;">!boot
+                    @*
+                    <div class="hint">
+                        </br>Chancla someone! Leave empty to target Mima.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!hug @MimaSweets')} test(); return false;">!hug
+                    @*
+                    <div class="hint">
+                        </br>Sends hugs to the targeted user. Leave empty to target Mima.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!suplex @Example')} test(); return false;">!suplex
+                    @*
+                    <div class="hint">
+                        </br>Suplexes the targeted user. Leave empty to target Mima.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!hug @Example')} test(); return false;">!fishlap
+                    @*
+                    <div class="hint">
+                        </br>Fishlaps the targeted user! Leave empty to target Mima.</a>
+                </button>
+
+            </div>
+        </div>
+        <div class="title-container">
+            <button class="title">
+                <h2>🛜 External Links</h2>
+            </button>
+            <div class="container">
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!gameinfo')} test(); return false;">!gameinfo
+                    <div class="hint">
+                        </br>Links to the IGDB page for the game I'm currently playing</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!gameinfo Bioshock')} test(); return false;">!gameinfo
+                    *
+                    <div class="hint">
+                        </br>Check the IGDB page for any game you like.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!hltb')} test(); return false;">!hltb
+                    <div class="hint">
+                        </br>Links to the HowLongToBeat page for the game I'm currently playing</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!hltb Bioshock')} test(); return false;">!hltb
+                    *
+                    <div class="hint">
+                        </br>Check the HowLongToBeat page for any game you like.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!tw')} test(); return false;">!tw
+                    <div class="hint">
+                        </br>Links to the content warnings sites for the game I'm currently playing.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!tw Bioshock')} test(); return false;">!tw
+                    *
+                    <div class="hint">
+                        </br>Let's you look up content warnings for any game.</a>
+                </button>
+                <button class="texts"
+                    onClick="function test(){ navigator.clipboard.writeText('!pronouns')} test(); return false;">!pronouns
+                    <div class="hint">
+                        </br>Links to alejo.io pronouns set up page, which manages the pronouns for the on-screen
+                        chat.</a>
+                </button>
+            </div>
+        </div>
+        <div class="title-container">
+            <button class="title">
+                <h2>🌦️ Time and Weather</h2>
+            </button>
+            <div class="container">
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!time')} test(); return false;">!time
+                    <div class="hint">
+                        </br>Posts Mima's local time to chat.</a>
+                </button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('!weather Lisbon')} test(); return false;">!weather
+                    *
+                    <div class="hint">
+                        </br>Check the Time, Weather condition, and temperature for any city you like.</a>
+                </button>
+            </div>
+        </div>
+        <div class="sources">
+            <ul>
+                <li><a hred="https://pronouns.alejo.io/">alejo.io pronouns set up page.</a></li>
+                <li><a href="gamephobias.com">Gamephobias.com</a></li>
+                <li><a href="howlongtobeat.com">How Long To Beat.com</a></li>
+                <li><a href="https://www.igdb.com/">The Indie Game Database</a></li>
+                <li><a href="taminggaming.com">TamingGaming.com</a></li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="sns-container">
+        <ul class="sns">
+            <li><a href="#"><img href="#top" src="/media/twitch.svg" height="40px" alt="Twitch"></a></li>
+            <li><a href="#"><img href="#top" src="/media/youtube.svg" height="40px" alt="Youtube"></a></li>
+            <li><a href="#"><img href="#top" src="/media/twitter.png" height="40px" alt="Twitter"></a></li>
+            <li><a href="#"><img href="#top" src="/media/tiktok.svg" height="40px" alt="Tiktok"></a></li>
+            <li><a href="#"><img href="#top" src="/media/pinterest.svg" height="40px" alt="Pinteres"></a></li>
+        </ul>
+    </div>
+    <a class="links" href="#">Terms and Conditions</a>&emsp;|&emsp;<a class="links" href="#">Contact Us</a></br>
+    Made by <a class="links" href="https://mimasweets.carrd.co/" target="#">@mimasweets</a></br>
+    Powered by spite.</br>
+    <img src="/media/Shyghosts-horizontal.svg" alt="logo" class="logo" height="40px"></br>
+    ©2024 ShyGhosts.</br>
+</footer>
+
+</html>
