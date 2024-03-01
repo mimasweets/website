@@ -344,11 +344,12 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-@media (any-pointer: none){
+/* @media  (max-width: 768px){ */
+  @media (orientation: portrait), (max-width: 768px){
 
-h1::before{
-  content: 'TEST PLUS!';
-}
+  h1::before{
+    content: 'TEST PLUS!';
+  }
 
   .large-container {
     display: grid;
