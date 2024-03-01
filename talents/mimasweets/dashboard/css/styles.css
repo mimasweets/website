@@ -319,9 +319,7 @@ footer {
   h1::before {
     content: 'Portrait Mode: Test 3 ';
   } */
-  body {
-    transform: scale(1.3);
-  }
+
   .large-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
