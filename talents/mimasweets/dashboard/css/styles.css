@@ -65,6 +65,10 @@ a {
   text-decoration: none;
   color: var(--disabled-color);
 }
+.folder{
+  text-decoration: none;
+  color: var(--disabled-color);
+}
 
 .large-container {
   display: grid;
