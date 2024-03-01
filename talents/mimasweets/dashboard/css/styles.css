@@ -346,6 +346,10 @@ footer {
 
 @media (any-pointer: none){
 
+h1::before{
+  content: 'TEST PLUS!';
+}
+
   .large-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
