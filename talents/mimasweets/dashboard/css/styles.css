@@ -314,7 +314,7 @@ footer {
   @media (orientation: portrait), (max-width: 768px){
 
   h1::before{
-    content: 'Portrait Mode: ';
+    content: 'Portrait Mode: Test 2 ';
   }
 
   .large-container {
