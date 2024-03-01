@@ -79,7 +79,6 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   cursor: pointer;
-  color: var(--primary-text);
   border-color: var(--border-color);
   border-radius: 0px 0px var(--radius) var(--radius);
   background-color: var(--foreground-color);
@@ -91,7 +90,6 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   cursor: pointer;
-  color: var(--primary-text);
   border-color: var(--border-color);
   border-radius: 0px 0px var(--radius) var(--radius);
   background-color: var(--foreground-color);
@@ -121,7 +119,7 @@ a {
   position: relative;
   text-align: left;
   min-width: 100%;
-  
+  line-height: 80%;  
   padding: 1rem 1rem 1rem 1rem;
   color: var(--primary-text);
   font-weight: bold;
@@ -313,10 +311,10 @@ footer {
 
 @media (orientation: portrait),
 (max-width: 768px) {
-
+/* 
   h1::before {
     content: 'Portrait Mode: Test 3 ';
-  }
+  } */
 
   .large-container {
     display: grid;
@@ -333,21 +331,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
-
-  h1, h2 {
-    font-size: 2em;
-  }
-  
-  
-  p,
-  footer, .texts, .sounds{
-    font-size: 1.5em;
-  }
-  
-  }
-  .hint, .hint:active, .sources, .sources li {
-    font-size: 1.1em;
-  }
-
+}
 
 
