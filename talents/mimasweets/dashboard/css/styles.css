@@ -344,7 +344,7 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-@media screen and (max-width: 768px),(pointer:none), (pointer:coarse) {
+@media screen and (max-width: 768px) or (pointer:none) or (pointer:coarse) {
 
   .large-container {
     display: grid;
@@ -360,6 +360,4 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
-  .title {
-    font-size: 200%;}
 }
