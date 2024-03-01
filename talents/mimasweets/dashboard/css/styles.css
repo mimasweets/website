@@ -360,4 +360,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
+  .title {
+    font-size: 200%;}
 }
