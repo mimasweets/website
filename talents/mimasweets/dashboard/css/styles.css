@@ -101,6 +101,53 @@ a {
     1px 1px 0px var(--border-color);
 }
 
+.top10-container {
+  text-align: center;
+  position: relative;
+}
+
+.sound-container {
+  margin: 0 0 0.5em 0;
+}
+
+.soundboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.sns-container {
+  filter: invert(28%) sepia(100%) saturate(6074%) hue-rotate(354deg) brightness(106%) contrast(125%);
+  /* codepen filter maker https://codepen.io/sosuke/pen/Pjoqqp */
+  display: grid;
+  grid-template-columns: repeat(1, 5fr);
+  margin: auto;
+  width: 80%;
+}
+
+@media (orientation: portrait),
+(max-width: 768px) {
+
+  body {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+
+  .large-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    column-gap: 0.5em;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .soundboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
 .title {
   position: relative;
   text-align: left;
@@ -182,12 +229,7 @@ footer {
   text-align: center;
 }
 
-.sns-container {
-  filter: invert(28%) sepia(100%) saturate(6074%) hue-rotate(354deg) brightness(106%) contrast(125%);
-  /* codepen filter maker https://codepen.io/sosuke/pen/Pjoqqp */
-  margin: auto;
-  width: 50%;
-}
+
 
 .sns {
   display: flex;
@@ -200,17 +242,6 @@ footer {
 
 .logo {
   grid-column: 1;
-}
-
-/* soundboard exclusives */
-
-.top10-container {
-  text-align: center;
-  position: relative;
-}
-
-.sound-container {
-  margin: 0 0 0.5em 0;
 }
 
 .sounds {
@@ -303,38 +334,3 @@ footer {
   border-radius: 50%;
   background-color: #8289a1;
 }
-
-.sound-container {
-  margin: 0 0 0.5em 0;
-}
-
-.soundboard-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
-
-@media (orientation: portrait),
-(max-width: 768px) {
-/* 
-  h1::before {
-    content: 'Portrait Mode: Test 3 ';
-  } */
-
-  .large-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    column-gap: 0.5em;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  }
-
-  .soundboard-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  }
-}
-
-
