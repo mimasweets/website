@@ -79,6 +79,33 @@ a {
   margin: 0 .25em 0 0.25em;
 }
 
+.texts {
+  font-size: 1em;
+  position: relative;
+  text-align: left;
+  min-width: 100%;
+  line-height: 80%;  
+  padding: 1rem 1rem 1rem 1rem;
+  color: var(--primary-text);
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 0px 1px 0px var(--border-color);
+}
+
+.texts:hover {
+  color: var(--primary-text);
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+.texts:active {
+  color: var(--secondary-text);
+  background-color: var(--active-color);
+  cursor: pointer;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
@@ -165,32 +192,7 @@ a {
 
 }
 
-.texts {
-  font-size: 1em;
-  position: relative;
-  text-align: left;
-  min-width: 100%;
-  line-height: 80%;  
-  padding: 1rem 1rem 1rem 1rem;
-  color: var(--primary-text);
-  font-weight: bold;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  box-shadow: 1px 1px 0px var(--border-color);
-}
 
-.texts:hover {
-  color: var(--primary-text);
-  background-color: var(--hover-color);
-  cursor: pointer;
-}
-
-.texts:active {
-  color: var(--secondary-text);
-  background-color: var(--active-color);
-  cursor: pointer;
-}
 
 .hint {
   font-weight: 400;
