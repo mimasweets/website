@@ -151,6 +151,21 @@ a {
   width: 80%;
 }
 
+.sounds {
+  position: relative;
+  width: 200px;
+  font-size: 0.9em;
+  min-width: 50%;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--primary-text);
+  border: 1px solid var(--border-color-emphasis);
+  background-color: var(--foreground-color);
+  box-shadow: 0 5px var(--border-color-emphasis);
+}
+
 @media (orientation: portrait),
 (max-width: 768px) {
 
@@ -172,6 +187,11 @@ a {
   .soundboard-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+
+  .sounds{
+    width: 140px;
+    font-size: 0.9em; 
   }
 }
 
@@ -244,20 +264,6 @@ footer {
 
 .logo {
   grid-column: 1;
-}
-
-.sounds {
-  position: relative;
-  font-size: 1em;
-  min-width: 50%;
-  height: 40px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
-  color: var(--primary-text);
-  border: 1px solid var(--border-color-emphasis);
-  background-color: var(--foreground-color);
-  box-shadow: 0 5px var(--border-color-emphasis);
 }
 
 .sounds:hover {
