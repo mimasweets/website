@@ -129,6 +129,8 @@ a {
 }
 
 .top10-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   text-align: center;
   position: relative;
 }
