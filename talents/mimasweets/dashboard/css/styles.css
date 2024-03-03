@@ -253,8 +253,6 @@ footer {
   text-align: center;
 }
 
-
-
 .sns {
   display: flex;
   flex-wrap: wrap;
@@ -344,3 +342,52 @@ footer {
   border-radius: 50%;
   background-color: #8289a1;
 }
+
+details > summary {
+  list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::after {
+  content: '';
+  font-size: 1em;
+  color: var(--primary-text);
+  text-align: center;
+  font-weight:400;
+  }
+
+  details > summary:hover::after {
+    content: 'Click to Expand';
+
+    }
+
+details[open] > summary::after {
+  content: '';
+  font-size: 1em;
+  color: var(--primary-text);
+  text-align: center;
+  font-weight:400;
+}
+
+details {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  min-width: 50%;
+  line-height: 80%;
+  padding: 1rem 0 1rem 1rem;
+  font-weight: 800;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--header-color);
+  margin-top: 0.5em;
+  box-shadow: -1px -1px 0px var(--border-color),
+    1px 1px 0px var(--border-color);
+
+  }
+
+details[open] > summary {
+  }
