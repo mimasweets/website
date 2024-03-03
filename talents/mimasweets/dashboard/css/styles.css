@@ -91,7 +91,7 @@ a {
   background-color: transparent;
   cursor: pointer;
   border: none;
-  box-shadow: inset 0px 1px 0px var(--border-color);
+  box-shadow: 1px 1px 1px 0px var(--border-color);
 }
 
 .texts:hover {
