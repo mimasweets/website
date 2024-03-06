@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Salemba's Star Currency Commands</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../dashboard/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <h1><a class="folder" href="../dashboard/index.html">Salemba's Dashboard</a> > Star Commands</h1>
+    <p class="hint">Click the command name to copy to clipboard</p>
+
+    
+        <div class="title-container">
+            <button class="title">
+                <h2>⭐ Stars</h2>
+                <!-- <img class="new" src="./imgs/new.png" /> -->
+            </button>
+            <div class="container">
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!welcome	)} test(); return false;">
+                    !welcome <div class="hint"></br> Get a 1-time-only Starter Pack including 20,000 Stars and a random
+                        item. </br></br> Cooldown: 1-time-only </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!stars	)} test(); return false;"> !stars
+                    <div class="hint"></br> Get your or someone else's (by putting their name after the command) current
+                        amount of stars. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!welcome	)} test(); return false;">
+                    !welcome <div class="hint"></br> Get a 1-time-only Starter Pack including 20,000 Stars and a random
+                        item. </br></br> Cooldown: 1-time-only </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!stars	)} test(); return false;"> !stars
+                    <div class="hint"></br> Get your or someone else's (by putting their name after the command) current
+                        amount of stars. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!rank	)} test(); return false;"> !rank
+                    <div class="hint"></br> Get your or someone else's (by putting their name after the command) current
+                        rank on the Stars leaderboard. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!leaderboard	)} test(); return false;">
+                    !leaderboard <div class="hint"></br> Shows the top 10 star holders. </br></br> Cooldown: 10s global
+                        </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!gamble	)} test(); return false;"> !gamble
+                    <div class="hint"></br> Gamble any amount of stars with a 52% chance to win. You can also use
+                        percentages (%) or gamble all. If you don't enter an amount, it uses 100 stars to gamble.
+                        </br></br> Cooldown: "5m user
+                        (shared with !slots)" </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!slots	)} test(); return false;"> !slots
+                    <div class="hint"></br> "Gamble any amount of stars in a slot-machine. You can also use percentages
+                        (%) or gamble all. If you don't enter an amount, it uses 100 stars for the slot machine.
+                        Here are the odds for the slots:
+                        - 40% for Banana (14.67% for triple Banana, 3x multiplier)
+                        - 30% for Shell (7.73% for triple Shell, 5x multiplier)
+                        - 15% for Mushroom (1.98% for triple Mushroom, 15x multiplier)
+                        - 13% for Star (0.22% for triple Star, 500x multiplier)
+                        - 2% for Bowser (0.01% for triple Bowser, 100.000x multiplier)
+                        This gives a total of 24.61% chance of winning. (Star acts as a wildcard, except for Bowser)"
+                        </br></br> Cooldown: "5m user
+                        (shared with !gamble)" </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!steal	)} test(); return false;"> !steal
+                    <div class="hint"></br> Try to steal stars from someone else with a 20% chance of success. The
+                        amount you can get from stealing ranges from 1% to 5% of the target's stars. If it fails, you
+                        either lose 500 + 1% of your pocket stars to the person you tried to steal from or 1000 + 2% of
+                        your total stars in general. Sucess rate decreases to 10% if your pocket stars are in the
+                        negative. </br></br> Cooldown: 20m user </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!pocketscan	)} test(); return false;">
+                    !pocketscan <div class="hint"></br> Shows the 10 people with the most Stars in their pockets.
+                        </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!loan	)} test(); return false;"> !loan
+                    <div class="hint"></br> Give someone a loan in a custom amount of stars. There's no way to charge it
+                        back, but loans will be stored. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!loans	)} test(); return false;"> !loans
+                    <div class="hint"></br> Shows your current loans, both which you gave and which you received. Only
+                        shows a sum of each and not the individual amounts per person. You can also show individual
+                        loans by putting the target name after !loans. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!give	)} test(); return false;"> !give
+                    <div class="hint"></br> Give any amount of stars to someone else. This also automatically pays off
+                        your loans if you have any. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!deposit	)} test(); return false;">
+                    !deposit <div class="hint"></br> Deposit any amount of stars onto your bank account. Resets the
+                        timer until you can withdraw. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!withdraw	)} test(); return false;">
+                    !withdraw <div class="hint"></br> Withdraw any amount of stars from your bank account. Only works
+                        after you've accumulated 5h of watchtime since the last deposit. </br></br> Cooldown: None
+                        </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!bank	)} test(); return false;"> !bank
+                    <div class="hint"></br> "Check your current bank account.
+                        Interest rates table (all per minute):
+                        - 50,000 or lower: 0.09%
+                        - 50,000 - 99,999: 0.08%
+                        - 100,000 - 199,999: 0.07%
+                        - 200,000 - 299,999: 0.06%
+                        - 300,000 - 499,999: 0.05%
+                        - 500,000 - 999,999: 0.04%
+                        - 1,000,000 - 1,999,999: 0.03%
+                        - 2,000,000 - 2,999,999: 0.02%
+                        - 3,000,000 - 4,999,999: 0.01%
+                        - 5,000,000 or more: 0.005%" </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!claim	)} test(); return false;"> !claim
+                    <div class="hint"></br> Only usable when a star drop appears in chat - collects them for you.
+                        </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!duel	)} test(); return false;"> !duel
+                    <div class="hint"></br> Challenge someone to a duel by adding their name and an amount of stars you
+                        want to bet after the command. If you leave the name out, the duel challenge is open to anyone
+                        in the chat. Minimum amount = 100. Once accepted, after a delay up until 30 seconds, Botlemba
+                        will give a call to "SHOOT", after which you'll have to type !shoot. The faster one wins. If you
+                        shoot before the call though, you lose. </br></br> Cooldown: 10m user </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!accept	)} test(); return false;"> !accept
+                    <div class="hint"></br> Accepts a duel. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!decline	)} test(); return false;">
+                    !decline <div class="hint"></br> Declines a duel. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!shoot	)} test(); return false;"> !shoot
+                    <div class="hint"></br> Only used in a duel. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!duelstats	)} test(); return false;">
+                    !duelstats <div class="hint"></br> Shows your Winrate, Amounts of Wins and Losses, Highest Streak
+                        (Only >2) and Current Streak (Only >2) </br></br> Cooldown: None </a></button>
+                <button class=texts onClick="function test(){ navigator.clipboard.writeText('	" !lottery !ticket
+                    !lotteryticket" )} test(); return false;"> "!lottery
+                    !ticket
+                    !lotteryticket" <div class="hint"></br> Get a 1-per-stream lottery ticket with a random number
+                        between 1-50. Drawings at the end of the stream. If no one wins, the prize stays in the pot for
+                        the next stream. 50 tickets is the limit per stream. </br></br> Cooldown: None </a></button>
+                <button class=texts onClick="function test(){ navigator.clipboard.writeText('	" !lotterypot !pot" )}
+                    test(); return false;"> "!lotterypot
+                    !pot" <div class="hint"></br> Shows how many Stars the lottery pot holds currently. </br></br>
+                        Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!donate	)} test(); return false;"> !donate
+                    <div class="hint"></br> Donate Stars towards the lottery pot (minimum = 100) </br></br> Cooldown:
+                        None </a></button>
+                <button class=texts onClick="function test(){ navigator.clipboard.writeText('	" !itembox !item" )}
+                    test(); return false;"> "!itembox
+                    !item" <div class="hint"></br> "Buys an itembox which contains 1 out of 8 possible items:
+                        - 20% for Boo
+                        - 20% for Fire Flower
+                        - 15% for Piranha Plant
+                        - 15% for Lucky Charm
+                        - 10% for Battery
+                        - 10% for Bullet Bill
+                        - 5% for Boomerang
+                        - 1% for Mirror
+                        - 1% for Key
+                        - 1% for Bob-omb
+                        - 1% for Blue Shell
+                        - 1% for Star Generator
+                        You can only hold 5 items at once in your inventory." </br></br> Cooldown: "None,
+                        but only 5
+                        per stream" </a></button>
+                <button class=texts onClick="function test(){ navigator.clipboard.writeText('	" !inventory !items" )}
+                    test(); return false;"> "!inventory
+                    !items" <div class="hint"></br> Shows the items you're currently holding. Also works to show someone
+                        else's inventory by putting their name after the command. </br></br> Cooldown: None
+                        </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!use [item]	)} test(); return false;">
+                    !use [item] <div class="hint"></br> Use an item out of your inventory. Replace [item] with one of
+                        the itemnames below. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	battery	)} test(); return false;"> battery
+                    <div class="hint"></br> "Comes with 2 charges and eliminates the cooldown of your last used command
+                        (even if that used command was on cooldown). Also has a few other versatile uses and
+                        interactions:
+                        - if it's used after !lottery, it allows you to buy 1 additional lottery ticket (limited to 1
+                        extra per stream).
+                        - if it's used after !withdraw, it decreases the time you have to wait until you can withdraw
+                        your stars from the bank by 1 hour.
+                        - if it's used after !item or !itembox, it allows you to buy another item this stream (no limit)
+                        - you can eliminate the cooldown to use another voice changer by typing ""voicemod"", ""voice""
+                        or ""voicechanger"" after !use battery
+                        - you can eliminate the cooldown of the ???-redeem by typing ""?"", ""??"" or ""???"" after !use
+                        battery" </br></br> Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	piranhaplant	)} test(); return false;">
+                    piranhaplant <div class="hint"></br> Protects you from 3 steal attempts within the remaining stream.
+                        Also snatches 5% + 1500 stars out of the thiefs pocket. While you have an active Piranha Plant,
+                        Boos won't target you. Using multiple Piranha Plants stacks up the uses. </br></br> Cooldown:
+                        </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	luckycharm	)} test(); return false;">
+                    luckycharm <div class="hint"></br> For your next 3 gambles or slots rolls, you only lose half the
+                        amount you bet if they fail. Has a 2% chance for a full protection. Using multiple Lucky Charms
+                        stacks up the uses. </br></br> Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	fireflower	)} test(); return false;">
+                    fireflower <div class="hint"></br> Your next steal attempt has double the chance to succeed and has
+                        no repercussions if it fails. If the target has an active Piranha Plant, it gets destroyed and
+                        won't snatch Stars from you. </br></br> Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	bob-omb	)} test(); return false;"> bob-omb
+                    <div class="hint"></br> Deals 1% damage to everyone that owns any Stars (to both bank and pocket)
+                        except to the person using it, but it can be defused by solving simple math equations quickly.
+                        Everyone can participate in that. Math equations include additions, subtractions and
+                        multiplications. </br></br> Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	boo	)} test(); return false;"> boo <div
+                        class="hint"></br> Steals 5-10% of 1 or multiple random targets with more than 6000 total Stars
+                        (can also affect their bank account) up to a maximum of 500,000 Stars and a minimum of 2,000
+                        Stars. Only targets multiple people if the minimum hasn't been met yet. Additionally has a 5%
+                        chance to steal an item if the target owns one (max 1). </br></br> Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	boomerang	)} test(); return false;">
+                    boomerang <div class="hint"></br> "Throws a boomerang, which will target a random recent chatter
+                        (last 5 minutes before throwing the boomerang) and arrive after 1-2 minutes. The target has the
+                        options to !dodge or !parry with parry having a much shorter time frame but being higher risk,
+                        higher reward.
+                        - A successful dodge will result in the Boomerang either return back to the person (20%) who
+                        threw it to !catch it for a reuse (100% in this case), flying on to another target or vanishing.
+                        - A successful parry will result in the Boomerang flying back to the person who threw it who
+                        will have to either !catch (same time frame as parry but 100% reuse) or !dodge it.
+                        - Failing to do either will result in getting hit for 5,000 + 4-7% (always 7% on failed parry)
+                        of pocket Stars and an item (30% chance, 100% on failed parry) and the Boomerang will return to
+                        the person who threw it to !catch (20% reuse, 50% if it steals less than 5,000 Stars with no
+                        item).
+
+                        You can use a Fire Flower before using a Boomerang to ignite it and get stronger stats on it:
+                        - Shorter time frame to parry and dodge
+                        - 10,000 + 6-9% damage (always 9% on failed parry) and 50% chance for an item (100% on failed
+                        parry)
+                        - only 10% reuse chance on a catch as a tradeoff" </br></br> Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	bulletbill	)} test(); return false;">
+                    bulletbill <div class="hint"></br> Boosts all your passive Stars income by an x2 multiplier for the
+                        next 30 minutes. This includes the general passive income for watching (10 per minute), your
+                        Star Generators and your interest on your bank account. Also increases the interest limit by x2
+                        and adds multiplicatively if you own the "name"-redeem aswell. Always boosts your interest to at
+                        least 1,000 per minute. </br></br> Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	blueshell	)} test(); return false;">
+                    blueshell <div class="hint"></br> Hits the #1 on the leaderboard for 1-3% of their total Stars (can
+                        also affect their bank account). Half of the damage it does will be added to the lottery pot.
+                        0.01-0.1% of the damage + 10000 will be returned will be returned to the item user. </br></br>
+                        Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	key	)} test(); return false;"> key <div
+                        class="hint"></br> Only used to open chests which appear at every 500th chat message. </br></br>
+                        Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	mirror	)} test(); return false;"> mirror
+                    <div class="hint"></br> Copies and uses the last used item by another person. Can't copy your own
+                        last used item, equipment items or another mirror. </br></br> Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	stargenerator	)} test(); return false;">
+                    stargenerator <div class="hint"></br> Permanently adds a passive income of 10 Stars per minute
+                        watched. Adds up additively if you use multiple. </br></br> Cooldown: </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!sell [item]	)} test(); return false;">
+                    !sell [item] <div class="hint"></br> Sells one of your items from your inventory for 7500 stars.
+                        !sell all also works and sells your entire inventory. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!offer	)} test(); return false;"> !offer
+                    <div class="hint"></br> "You can offer an item from your inventory or Stars to trade or for a
+                        purchase to another person or to everyone in the chat.
+                        - !offer [user] [item or amount of Stars to offer] [item or amount of Stars you want] to target
+                        a specific person.
+                        - !offer [item or amount of Stars to offer] [item or amount of Stars you want] to offer it to
+                        everyone.
+                        Offers only last for 30 seconds and only one offer can be active at a time." </br></br>
+                        Cooldown: 10m user </a></button>
+                <button class=texts onClick="function test(){ navigator.clipboard.writeText('	" !buy !trade !purchase"
+                    )} test(); return false;"> "!buy
+                    !trade
+                    !purchase" <div class="hint"></br> Accept an offer to trade or purchase an item. All 3 commands work
+                        the same. </br></br> Cooldown: None </a></button>
+                <button class=texts onClick="function test(){ navigator.clipboard.writeText('	" !whitelist !wl" )}
+                    test(); return false;"> "!whitelist
+                    !wl" <div class="hint"></br> Whitelist your name for random Boo steals, otherwise it will show "a
+                        random person" instead. </br></br> Cooldown: None </a></button>
+                <button class=texts
+                    onClick="function test(){ navigator.clipboard.writeText('	!prediction	)} test(); return false;">
+                    !prediction <div class="hint"></br> Shows how many Stars have been bet in the ongoing prediction -
+                        on each option aswell as total </br></br> Cooldown: 10s global </a></button>
+            </div>
+        
+</body>
+<footer>
+    <div class="sns-container">
+        <ul class="sns">
+            <li><a href="#"><img href="#top" src="/media/twitch.svg" height="40px" alt="Twitch"></a></li>
+            <li><a href="#"><img href="#top" src="/media/youtube.svg" height="40px" alt="Youtube"></a></li>
+            <li><a href="#"><img href="#top" src="/media/twitter.png" height="40px" alt="Twitter"></a></li>
+            <li><a href="#"><img href="#top" src="/media/tiktok.svg" height="40px" alt="Tiktok"></a></li>
+            <li><a href="#"><img href="#top" src="/media/pinterest.svg" height="40px" alt="Pinteres"></a></li>
+        </ul>
+    </div>
+    <a class="links" href="#">Terms and Conditions</a>&emsp;|&emsp;<a class="links" href="#">Contact Us</a></br>
+    Made by <a class="links" href="https://mimasweets.carrd.co/" target="#">@mimasweets</a></br>
+    Powered by spite.</br>
+    <img src="/media/Shyghosts-horizontal.svg" alt="logo" class="logo" height="40px"></br>
+    ©2024 ShyGhosts.</br>
+</footer>
+
+</html>
