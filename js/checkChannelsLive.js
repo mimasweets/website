@@ -19,7 +19,7 @@ window.onload = function() {
                 success: function(data) {
                     if (data.data.length > 0) {
                         // Channel is live, update the div class
-                        $(`#${channelName}`).addClass('live');
+                        $(`#${channelName}`).removeClass('offline').addClass('live');;
                     }
                 }
             });

@@ -258,35 +258,25 @@ footer {
     list-style: none;
 }
 
-#status {
-    color: red;
-}
-
-.talents {
+.talents-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5em;
 }
 
-.thumbnail {
-    border-radius: 10px;
+.thumbnail{
+    border-radius: 6px;
 }
-
-.checks {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-#status {
-    color: black;
-    background-color: red;
-    border-radius: 50%;
-    display: block;
-}
-
-.live {
-    content: "LIVE";
-    border-color: red;
+.offline, .live{
+    box-sizing : border-box;
     border-style: solid;
+    border-width: 4px;
     border-radius: 10px;
+    line-height:0;
+}
+.offline {
+    border-color: black;
+}
+.live {
+    border-color: red;
 }
