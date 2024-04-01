@@ -284,12 +284,9 @@ footer {
     display: block;
 }
 
-.Statusx {
-    color: black;
-    background-color: green;
-}
-
 .live {
-    color: black;
-    background-color: red;
+    content: "LIVE";
+    border-color: red;
+    border-style: solid;
+    border-radius: 10px;
 }
