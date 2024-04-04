@@ -261,11 +261,16 @@ footer {
 .talents-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5em;
+    gap: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .thumbnail{
     border-radius: 6px;
+    max-width: 40%;
+    max-width: 100%;
+  height: auto;   
 }
 .offline, .live{
     box-sizing : border-box;
