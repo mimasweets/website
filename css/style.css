@@ -267,6 +267,8 @@ footer {
 }
 
 .thumbnail{
+    content: "LIVE";    
+    color: red;
     border-radius: 6px;
     max-width: 40%;
     max-width: 100%;
