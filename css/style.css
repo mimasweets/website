@@ -256,6 +256,7 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     padding: 0;
     list-style: none;
+    gap: 1em;
 }
 
 .talents-grid {
