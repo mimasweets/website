@@ -6,7 +6,7 @@
         const oauthToken = 'ad7dxeilfq0k3wfdvylsxz0e134mqw';
 
         // List of Twitch channel names to check
-        const channels = ['mimasweets', 'tophatsss', 'kitxtsuki', 'woobat'];
+        const channels = ['mimasweets', 'tophatsss', 'kitxtsuki', 'woobat', 'salemba_'];
 
         // Function to check if a channel is live and fetch profile picture
         function fetchProfileAndCheckStatus(channelName) {
