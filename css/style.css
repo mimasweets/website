@@ -259,6 +259,7 @@ footer {
     gap: 1em;
 }
 
+/* talents-grid */
 .talents-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -267,24 +268,28 @@ footer {
     padding-right: 1em;
 }
 
-.thumbnail{
-    content: "LIVE";    
+.thumbnail {
     color: red;
     border-radius: 6px;
-    max-width: 40%;
-    max-width: 100%;
-  height: auto;   
+    max-width: 300px;
+    min-width: 40%;
+    height: auto;
+    display: block;
 }
-.offline, .live{
-    box-sizing : border-box;
+
+.offline,
+.live {
+    box-sizing: border-box;
     border-style: solid;
     border-width: 4px;
     border-radius: 10px;
-    line-height:0;
+    line-height: 0;
 }
+
 .offline {
     border-color: black;
 }
+
 .live {
     border-color: red;
 }
