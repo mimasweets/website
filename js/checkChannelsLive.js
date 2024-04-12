@@ -6,7 +6,7 @@
         const oauthToken = 'ad7dxeilfq0k3wfdvylsxz0e134mqw';
 
         // List of Twitch channel names to check
-        const channels = ['sinsible', 'tophatsss', 'bethsouls', 'woobat', 'salemba_'];
+        const channels = ['mimasweets', 'kitxtsuki', 'tophatsss', 'woobat', 'salemba_'];
 
        
     function fetchProfileAndCheckStatus(channelName, bannerId) {
