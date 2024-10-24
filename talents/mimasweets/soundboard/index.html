@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../dashboard/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/fill.js"></script>
     <script type="text/javascript">
         function play_sound(clicked_id) {
             var audio = new Audio("./audio/" + clicked_id + ".ogg");
@@ -495,6 +496,11 @@
                     onClick="function test(){ navigator.clipboard.writeText('!nope')} test(); return false;">📋</button>
             </div>
             <div class="sound-container">
+                <button class=sounds id="nuts" onClick="play_sound(this.id)">!nuts</button>
+                <button class="clipboard" href="#"
+                    onClick="function test(){ navigator.clipboard.writeText('!nuts')} test(); return false;">📋</button>
+            </div>
+            <div class="sound-container">
                 <button class=sounds id="objection" onClick="play_sound(this.id)">!objection</button>
                 <button class="clipboard" href="#"
                     onClick="function test(){ navigator.clipboard.writeText('!objection')} test(); return false;">📋</button>
@@ -775,22 +781,10 @@
                     onClick="function test(){ navigator.clipboard.writeText('!yougetnothing')} test(); return false;">📋</button>
             </div>
         </div>
+        <div w3-include-html="footer.html"></div>
+        <script>
+            includeHTML();
+        </script>
     </body>
-    <footer>
-        <div class="sns-container">
-        <ul class="sns">
-            <li><a href="#"><img href="#top" src="/media/twitch.svg" height="40px" alt="Twitch"></a></li>
-            <li><a href="#"><img href="#top" src="/media/youtube.svg" height="40px" alt="Youtube"></a></li>
-            <li><a href="#"><img href="#top" src="/media/twitter.png" height="40px" alt="Twitter"></a></li>
-            <li><a href="#"><img href="#top" src="/media/tiktok.svg" height="40px" alt="Tiktok"></a></li>
-            <li><a href="#"><img href="#top" src="/media/pinterest.svg" height="40px" alt="Pinteres"></a></li>
-        </ul>
-    </div>
-        <a class="links" href="#" >Terms and Conditions</a>&emsp;|&emsp;<a class="links" href="#" >Contact Us</a></br>
-        Made by <a class="links" href="https://mimasweets.carrd.co/" target="#">@mimasweets</a></br>
-        Powered by spite.</br>
-        <img src="/media/Shyghosts-horizontal.svg" alt="logo" class="logo" height="40px"></br>
-        ©2024 ShyGhosts.</br>
-    </footer>
-    
 </html>
+
