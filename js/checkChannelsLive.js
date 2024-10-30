@@ -1,9 +1,9 @@
 
     window.onload = function() {
     // Replace with your Twitch Client ID
-        const clientId = 'cv1t246lh2zdc1zq0bc771fdn3bnzr';
+        const clientId = 'kg6pppl0nhg3kj17ky4x52tuxmos49';
         // Replace with your Twitch OAuth token
-        const oauthToken = 'ad7dxeilfq0k3wfdvylsxz0e134mqw';
+        const oauthToken = 'omh4w1pxxb0tcldetmcq4o07ns35kl';
 
         // List of Twitch channel names to check
         const channels = ['mimasweets', 'kitxtsuki', 'miiraculoussushii', 'woobat', 'salemba_', 'sir_xurr'];
