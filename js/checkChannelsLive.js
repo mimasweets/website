@@ -3,7 +3,7 @@
     // Replace with your Twitch Client ID
         const clientId = 'kg6pppl0nhg3kj17ky4x52tuxmos49';
         // Replace with your Twitch OAuth token
-        const oauthToken = 'omh4w1pxxb0tcldetmcq4o07ns35kl';
+        // const oauthToken = 'omh4w1pxxb0tcldetmcq4o07ns35kl';
 
         // List of Twitch channel names to check
         const channels = ['mimasweets', 'kitxtsuki', 'miiraculoussushii', 'woobat', 'salemba_', 'sir_xurr'];
@@ -14,7 +14,7 @@
             url: `https://api.twitch.tv/helix/users?login=${channelName}`,
             headers: {
                 'Client-ID': clientId,
-                'Authorization': `Bearer ${oauthToken}`
+                // 'Authorization': `Bearer ${oauthToken}`
             },
             success: function(userData) {
                 if (userData.data.length > 0) {
