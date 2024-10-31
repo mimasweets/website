@@ -1,33 +1,27 @@
-
-    window.onload = function() {
+window.onload = function() {
     // Replace with your Twitch Client ID
-        const clientId = 'pfdgyntvo86ijwd4gaajxe092kwkzr';
-        // Replace with your Twitch OAuth token
-        const oauthToken = '9bkuboxwyzyr00tl2bcbkp0danc0a6';
+    const clientId = 'kg6pppl0nhg3kj17ky4x52tuxmos49';
 
-        // List of Twitch channel names to check
-        const channels = ['mimasweets', 'kitxtsuki', 'miiraculoussushii', 'woobat', 'salemba_', 'sir_xurr'];
+    // List of Twitch channel names to check
+    const channels = ['mimasweets', 'kitxtsuki', 'miiraculoussushii', 'woobat', 'salemba_', 'sir_xurr'];
 
-       
     function fetchProfileAndCheckStatus(channelName, bannerId) {
         $.ajax({
             url: `https://api.twitch.tv/helix/users?login=${channelName}`,
             headers: {
                 'Client-ID': clientId,
-                'Authorization': `Bearer ${oauthToken}`
             },
             success: function(userData) {
                 if (userData.data.length > 0) {
                     // Fetch the user's profile picture
                     const profileImageUrl = userData.data[0].profile_image_url;
                     $(`#${channelName}`).prepend(`<img class="thumbnail" src="${profileImageUrl}" alt="${channelName}'s profile picture">`);
-    
+
                     // Check if the channel is live
                     $.ajax({
                         url: `https://api.twitch.tv/helix/streams?user_login=${channelName}`,
                         headers: {
                             'Client-ID': clientId,
-                            'Authorization': `Bearer ${oauthToken}`
                         },
                         success: function(streamData) {
                             if (streamData.data.length > 0) {
@@ -42,7 +36,7 @@
             }
         });
     }
-    
+
     // Ensure bannerId is correctly passed when calling fetchProfileAndCheckStatus
     $(document).ready(function() {
         channels.forEach((channel, index) => {
