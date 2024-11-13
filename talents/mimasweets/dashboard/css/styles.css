@@ -32,6 +32,7 @@
 body {
   font-family: sans-serif;
   background-color: var(--background-color);
+  padding: 0.5em 2em 2em 2em;
 }
 
 h1 {
@@ -45,13 +46,15 @@ h2 {
   color: var(--primary-text);
 }
 
-p {
+p,
+footer {
   font-size: 1em;
   color: var(--secondary-text);
   text-align: center;
 }
 
-p {
+p,
+footer {
   font-size: 1em;
   color: var(--secondary-text);
   text-align: left;
@@ -65,7 +68,6 @@ a {
 .folder{
   text-decoration: none;
   color: var(--disabled-color);
-  padding: 0.5rem 0.5rem 0 0.5rem ;
 }
 
 .large-container {
@@ -171,12 +173,14 @@ a {
 @media (orientation: portrait),
 (max-width: 768px) {
 
+  body {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
 
   .large-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     column-gap: 0.5em;
-    margin: 0.5rem 0.5rem 2rem 0.5rem;
   }
 
   .container {
@@ -241,6 +245,27 @@ sources.links {
   text-decoration: none;
   color: var(--secondary-text);
   font-weight: 400;
+}
+
+footer {
+  color: var(--primary-text);
+  background: var(--light-grey);
+  padding-top: 1em;
+  padding-bottom: 2.7em;
+  text-align: center;
+}
+
+.sns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.logo {
+  grid-column: 1;
 }
 
 .sounds:hover {
