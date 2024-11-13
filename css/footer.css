@@ -1,0 +1,55 @@
+/* Footer Starts Here */
+
+footer {
+    color: black;
+    background: rgba(137, 107, 212, 0.377);
+    padding: 1em 0 2.7em 0;
+    margin-top: 2em;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    grid-column: 1;
+}
+
+.page_top {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: blue;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 0px;
+}
+
+
+.page_top:hover {
+    background-color: green;
+}
+
+.sns-container {
+    margin: auto;
+    width: 50%;
+    padding: auto;
+}
+
+.sns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0;
+    list-style: none;
+    gap: 1em;
+}
+
+.sns-icon {
+    max-width : 40px;
+}
+.links{
+
+}
+#Quote{
+    text-decoration: none;
+    color: black;
+}

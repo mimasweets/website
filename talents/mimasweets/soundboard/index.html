@@ -4,9 +4,10 @@
 <head>
     <title>Mima's sound commands</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../dashboard/css/styles.css" />
+    <link rel="stylesheet" href="../../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="js/fill.js"></script>
+    <script src="../../../js/fill.js"></script>
     <script type="text/javascript">
         function play_sound(clicked_id) {
             var audio = new Audio("./audio/" + clicked_id + ".ogg");
@@ -781,7 +782,7 @@
                     onClick="function test(){ navigator.clipboard.writeText('!yougetnothing')} test(); return false;">📋</button>
             </div>
         </div>
-        <div w3-include-html="../../../../templates/footer.html"></div>
+        <div w3-include-html="../../../templates/footer.html"></div>
         <script>
             includeHTML();
         </script>

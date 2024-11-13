@@ -1,0 +1,326 @@
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --background-color: #e8e8e8;
+  --foreground-color: #f2f2f2;
+  --contrast-color: #28182d;
+  --header-color: #fcfcfc;
+  --border-color: #dadada;
+  --border-color-emphasis: #9b9b9b;
+  --hover-color: #dadada;
+  --active-color: lightblue;
+  --disabled-color: #5d5d5d;
+  --primary-text: #640074;
+  --secondary-text: #ffffff;
+  --radius: 1em;
+  --sizep: 1rem;
+  --sizeh3: 1.618rem;
+  --sizeh2: 2rem;
+  --sizeh1: 3rem;
+  --KitxTsuki: #ff3700;
+  --MiiraculousSushii: #772ce8;
+  --Salemba_: green;
+  --Woobat: blue;
+  --Tophatsss: #00d4ff;
+  --MimaSweets: #841420;
+  --WhatifAndy: purple;
+  --fade: rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #28182d;
+    --foreground-color: #392140;
+    --contrast-color: #e8e8e8;
+    --header-color: #663973;
+    --border-color: #28182d;
+    --border-color-emphasis: #241527;
+    --hover-color: #3244274d3232;
+    --active-color: #ffe1ff;
+    --disabled-color: #ffcdff;
+    --primary-text: #ffffff;
+    --secondary-text: #2c2c2c;
+    --fade: rgba(0, 0, 0, 0.7);
+    ;
+  }
+}
+
+body {
+  font-family: "Atkinson Hyperlegible";
+  background-color: var(--background-color);
+  padding: 0;
+  margin: 0;
+  color: var(--secondary-text);
+}
+
+h1 {
+  display: grid;
+  color: var(--MimaSweets);
+  font-size: var(--sizeh1);
+  margin: 0;
+  max-width: 80dvw;
+}
+
+h2 {
+  margin: auto;
+  padding: 0;
+  display: grid;
+  color: var(--primary-text);
+  font-size: var(--sizeh2);
+  place-items: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: var(--sizeh3);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+
+#HeroSection {
+  visibility: visible;
+  height: 100dvh;
+  background-size: cover;
+  background-position: center;
+  place-content: center;
+  text-align: left;
+  padding: 0 0 0 2em;
+  background-color: black;
+}
+
+#HeroFlavourText {
+  font-family: "Atkinson Hyperlegible";
+  font-size: var(--sizeh3);
+  padding-left: 2em;
+  margin: 0 1.5em 0 0;
+  text-wrap: pretty;
+  text-shadow: 5px 5px 10px var(--primary-text);
+}
+
+#Meet {
+  background-size: cover;
+  background-position: center;
+  margin-top: 1rem;
+}
+
+.InfoContainer {
+  margin-top: 1rem;
+}
+
+.TalentGrid {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  text-align: center;
+}
+
+#Meetbio {
+  color: var(--primary-text);
+  font-size: 1.3rem;
+  background-color: rgba(255, 0, 0, 0.292);
+  text-align: left;
+}
+
+#Infobox {
+  color: var(--primary-text);
+  list-style-type: none;
+  background-color: rgba(0, 255, 0, 0.292);
+  font-size: var(--sizep);
+}
+
+.Title {
+  font-weight: bold;
+}
+
+.profilepic {
+  margin: 0;
+  text-align: center;
+  border: 5px solid var(--border-color);
+  width: fit-content;
+  height: fit-content;
+  line-height: 0;
+  background-color: var(--border-color);
+  place-self: start center;
+  border-radius: var(--radius)
+}
+
+#TalentImage {
+  max-width: 90dvw;
+  max-height: max-content;
+  border-radius: var(--radius);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 255;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+.stats {
+  place-self: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 1rem;
+  color: var(--primary-text);
+  background-color: rgba(255, 0, 0, 0.292);
+}
+
+.statsTitle {
+  font-size: var(--sizeh2);
+  align-content: end;
+}
+
+.StatsNumbers {
+  font-size: var(--sizeh1);
+  font-weight: 900;
+  align-content: end;
+  margin: auto;
+}
+
+#ViewersAverage {
+  grid-area: 1 / 1 / 3 / 4;
+  text-align: right;
+}
+
+#ViewersNumber {
+  grid-area: 1 / 4 / 3 / 6;
+  text-align: left;
+  margin: auto;
+}
+
+#FollowersTotal {
+  grid-area: 3 / 3 / 5 / 6;
+  text-align: left;
+}
+
+#FollowersNumber {
+  grid-area: 3 / 1 / 5 / 3;
+  text-align: left;
+}
+
+
+.ControlPanel {
+  place-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0.5em;
+  grid-row-gap: 1em;
+  margin-top: 1rem;
+  padding: center;
+  background-color: rgba(0, 255, 0, 0.292);
+  max-width: 400px;
+}
+
+.buttons {
+  border-radius: var(--radius);
+  color: var(--primary-text);
+  /* line-height: 0; this will fix images */
+}
+
+.buttonsText {
+  align-content: center;
+  place-content: space-around;
+}
+
+#dashboard {
+  background-image: url(../media/temp.png);
+  border: 5px solid var(--primary-text);
+  font-size: var(--sizeh3);
+}
+
+#microblogging,
+#shortvideo,
+#channel,
+#fourth {
+  margin: auto;
+  background-image: url(../media/temp.png);
+  border: 5px solid var(--primary-text);
+  height: 80px;
+  width: 80px;
+}
+
+.microblogging {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.shortvideo {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.channel {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.fourth {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+#dashboard {
+  grid-area: 2 / 1 / 3 / 5;
+}
+
+
+@media only screen and (min-width: 720px) {
+
+  .TalentGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    max-width: 1280px;
+    margin: 1rem auto auto auto;
+  }
+
+  .InfoContainer {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .profilepic {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .InfoContainer {
+    margin-top: 0rem;
+  }
+
+  img {
+    max-width: 50dvw;
+  }
+
+  .stats {
+    padding-top: 1rem;
+    margin: 1rem 0 1rem;
+  }
+}
